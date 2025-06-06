@@ -1,29 +1,35 @@
 import React from 'react';
-import tinderimg from '../image/location.png';
-import liveimg from '../image/live.png';
-import vanimg from '../image/van.png';
+import locationimg from '../image/weather.png';
+import mediaimg from '../image/socialmediaicons.png';
+import advimg from '../image/advocate.png';
 
 const projects = [
   {
-    title: 'TINDER',
-    img: tinderimg,
-    desc: 'A live Geolocation app for finding tweets and Twitter users around you.',
+    title: 'WEATHER',
+    img: locationimg,
+    desc: 'A live weather app for finding realtime weather of the cities.',
+    livelink: 'https://weather-app-gamma-azure-68.vercel.app/',
+    gitlink: 'https://github.com/Rohit-07SR/Weather-App',
   },
   {
-    title: 'LIVENTS',
-    img: liveimg,
-    desc: 'A video streaming app with live Geolocation, for streaming events.',
+    title: 'SIMPLE SOCIAL MEDIA APP',
+    img: mediaimg,
+    desc: 'A social media app where you can add, view, update and delete posts.',
+    livelink: 'https://media-app-rust.vercel.app/',
+    gitlink: 'https://github.com/Rohit-07SR/Media-App',
   },
   {
-    title: 'MOOVE',
-    img: vanimg,
-    desc: 'Mobile app for booking instant pickup & dropoff across major cities.',
+    title: 'NOTARY',
+    img: advimg,
+    desc: 'You can book an appointment with your advocate. (Development under progress...)',
+    livelink:'https://notary-peach.vercel.app/',
+    gitlink:'https://github.com/Rohit-07SR/notary',
   },
 ];
 
 const Myprojects = () => {
   return (
-    <div className="container py-5">
+    <div className="container py-5" id='myprojects'>
       <div className="row justify-content-center">
         {projects.map((proj, i) => (
           <div className="col-md-6 col-lg-4 mb-4" key={i}>
@@ -33,8 +39,8 @@ const Myprojects = () => {
                 <h5 className="card-title cdt">{proj.title}</h5>
                 <p className="card-text cdtxt">{proj.desc}</p>
                 <div className="mt-auto d-flex gap-2">
-                  <a href="#" className="btn btn1">View Live</a>
-                  <a href="#" className="btn btn2 btn-outline">GitHub Repo</a>
+                  <a href={proj.livelink} className="btn btn1" target="_blank" rel="noopener noreferrer">View Live</a>
+                  <a href={proj.gitlink} className="btn btn2 btn-outline" target="_blank" rel="noopener noreferrer">GitHub Repo</a>
                 </div>
               </div>
             </div>

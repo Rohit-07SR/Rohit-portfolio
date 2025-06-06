@@ -14,11 +14,14 @@ body{
     color: white;
 }
 
+
+
 .topclass {
     display: flex;
     justify-content: right;
     background-color: #1A1A29;
     color: white;
+    
 }
 
 .navbar-brand .a {
@@ -27,6 +30,7 @@ body{
 
 .navbar-nav .nav-link {
     color: white;
+    cursor: pointer;
 }
 
 .navbar {
@@ -37,7 +41,17 @@ body{
     justify-content: left;
     text-align: left;
     justify-items: left;
-    margin-top: 20%;
+    margin-top: 30%;
+}
+
+.navbar-toggler-icon{
+    background-color: #181824;
+    color: #7562E0 !important;
+    border-color: #7562E0 !important;
+    border-radius: 5px;
+    border-width: 3px !important;
+    width: 50px;
+    height: 50px;
 }
 
 .leftcontent h2{
@@ -149,6 +163,7 @@ p.solid {
 .rightimage img{
    height: 500px;
    width: 500px;
+   margin-top: 80px;
 }
 
 .rectbg {
@@ -164,7 +179,7 @@ p.solid {
 
 .two{
     color: #7562E0 !important;
-    margin-top: 3px;
+    margin-top: 25px;
 }
 
 .abtme p{
@@ -230,9 +245,7 @@ p.solid {
 }
 
 
-.txt{
-    margin-top: 50px;
-}
+
 
 .serviceoffered h5{
     color: #7562E0 ;

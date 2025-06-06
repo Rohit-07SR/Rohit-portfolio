@@ -2,14 +2,12 @@ import React from 'react';
 
 const Experience = () => {
   return (
-    <div className="container two">
+    <div className="container two" id='experience'>
       <div className="row justify-content-center text-left">
         <div className="col-md-12 abtme">
           <h2>About me:</h2>
           <p>
-            Hi, my name is <strong>Rohit</strong>, I am a Fullstack web developer, UI designer,
-            and Mobile developer. I have honed my skills in Web Development and have a core understanding
-            of advanced UI design principles. Here are the major skills I have.
+            Hi, my name is <strong>Rohit</strong>, I am a Highly motivated and detailed BCA graduate with a good foundation in technology as well as technical skills. Looking for the position of a Web Developer role in a development environment where my technical knowledge combined with programming skills will further help in generating and developing effective real world modern projects.
           </p>
         </div>
 
