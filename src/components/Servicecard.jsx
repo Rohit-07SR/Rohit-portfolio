@@ -63,9 +63,8 @@ const Servicecard = () => {
             <div className="col d-flex justify-content-center" key={index}>
               <div
                 className={`card ${service.style} text-center text-white shadow`}
-                style={{ width: '343px', height: '300px' }}
-              >
-                <div className="card-body bdy d-flex flex-column justify-content-center align-items-center">
+                style={{ width: '343px', height: '300px' }}>
+                <div className="card-body bdy d-flex flex-column justify-content-center align-items-center ">
                   <FontAwesomeIcon icon={service.icon} size="4x" className="mb-3" />
                   <h5 className="card-title">{service.title}</h5>
                   <p className="card-text">{service.text}</p>
