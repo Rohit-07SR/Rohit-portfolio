@@ -29,7 +29,7 @@ const projects = [
 
 const Myprojects = () => {
   return (
-    <div className="container py-5" id='myprojects'>
+    <div className="container py-5 claspro" id='myprojects'>
       <div className="row justify-content-center">
         {projects.map((proj, i) => (
           <div className="col-md-6 col-lg-4 mb-4" key={i}>

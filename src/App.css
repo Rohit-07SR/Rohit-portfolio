@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 
-*{
+* {
     font-family: poppins !important;
-    
+
 }
 
-body{
+body {
     background-color: #1A1A29 !important;
 }
 
@@ -20,31 +20,54 @@ body{
     display: flex;
     justify-content: right;
     background-color: #1A1A29;
-    color: white;
+    color: rgb(255, 255, 255);
     
-}
+}   
 
 .navbar-brand .a {
     color: white;
 }
 
-.navbar-nav .nav-link {
-    color: white;
+.navbar-nav .nav-link li {
+    color: white ;
+    cursor: pointer;
+    text-decoration: none !important;
+}
+
+.scroll-link{
+    text-decoration: none;
+    color: white !important;
+    margin-left: 20px;
+    font-weight: 500;
     cursor: pointer;
 }
+
+.scroll-link:hover,
+.active{
+    text-decoration: none;
+    color: #7562E0 !important;
+    margin-left: 20px;
+    font-weight: 500;
+    transition: 250ms;
+}
+
 
 .navbar {
     background-color: #1A1A29;
 }
 
-.leftcontent{
+.one{
+    margin-top: 100px;
+}
+
+.leftcontent {
     justify-content: left;
     text-align: left;
     justify-items: left;
     margin-top: 30%;
 }
 
-.navbar-toggler-icon{
+.navbar-toggler-icon {
     background-color: #181824;
     color: #7562E0 !important;
     border-color: #7562E0 !important;
@@ -54,13 +77,13 @@ body{
     height: 50px;
 }
 
-.leftcontent h2{
+.leftcontent h2 {
     font-size: 32px;
     font-weight: 600;
     color: white;
 }
 
-.leftcontent p{
+.leftcontent p {
     color: white;
     font-size: 18px;
     font-weight: 500;
@@ -69,7 +92,7 @@ body{
     justify-items: left;
 }
 
-.myname{
+.myname {
     font-size: 52px !important;
     font-weight: 600 !important;
 }
@@ -83,7 +106,6 @@ body{
 .one {
     background-color: #1A1A29;
     color: white;
-    height: 675px;
     position: relative;
 
 }
@@ -101,7 +123,7 @@ body{
     justify-items: left;
 }
 
-.buttonss{
+.buttonss {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -121,6 +143,8 @@ body{
     justify-content: center;
     text-align: center;
     justify-items: center;
+    width: 150px;
+    height: 40px;
 
 }
 
@@ -128,30 +152,45 @@ body{
     background-color: #7562E0;
     border-color: #7562E0 !important;
     border-width: 2px !important;
-    font-size: 20px;
+    font-size: 17px;
     font-family: poppins;
     font-weight: 500;
     align-items: center;
     justify-content: center;
     text-align: center;
     justify-items: center;
-    
+}
 
-} 
+.abt:hover{
+    background-color: #181824;
+    color: white;
+    transition: 500ms;
+}
 
 .pro {
     background-color: #1A1A29;
     border-color: #7562E0 !important;
     border-width: 2px !important;
     color: white;
-    font-size: 20px;
+    font-size: 17px;
     font-family: poppins;
     font-weight: 500;
     align-items: center;
     justify-content: center;
     text-align: center;
     justify-items: center;
-   
+
+}
+
+.pro:hover{
+    background-color: #7562E0;
+    color: rgb(0, 0, 0);
+    transition: 500ms;
+}
+
+.iconsize{
+    font-size: 15px;
+    margin-left: 15px !important;
 }
 
 p.solid {
@@ -160,10 +199,10 @@ p.solid {
 
 
 
-.rightimage img{
-   height: 500px;
-   width: 500px;
-   margin-top: 80px;
+.rightimage img {
+    height: 500px;
+    width: 500px;
+    margin-top: 80px;
 }
 
 .rectbg {
@@ -177,12 +216,12 @@ p.solid {
     margin-top: 512px;
 }
 
-.two{
+.two {
     color: #7562E0 !important;
-    margin-top: 25px;
+    margin-top: 150px;
 }
 
-.abtme p{
+.abtme p {
     color: white !important;
 }
 
@@ -192,7 +231,7 @@ p.solid {
     margin-top: 50px;
 }
 
-.exp h4{
+.exp h4 {
     color: white !important;
     font-size: 14px !important;
     display: flex;
@@ -200,26 +239,26 @@ p.solid {
     justify-content: center;
     text-align: center;
     justify-items: center;
-    
+
 }
 
-.vlt{
+.vlt {
     background-color: #BDBDBD;
     color: white;
     font-size: 20px;
     font-weight: 500;
-    font-family: poppins;   
+    font-family: poppins;
     padding: 20px;
     margin: 30px;
     height: 200px !important;
 }
 
-.vlt:hover{
+.vlt:hover {
     background-color: #7562E0;
     transition: 500ms;
 }
 
-.grey{
+.grey {
     padding: 20px;
     margin: 30px;
     background-color: #BDBDBD;
@@ -230,29 +269,29 @@ p.solid {
     height: 200px !important;
 }
 
-.grey:hover{
+.grey:hover {
     background-color: #7562E0;
     transition: 500ms;
 }
 
 .crd {
     background-color: #1A1A29;
-    --bs-gutter-x: -20.5rem !important; 
+    --bs-gutter-x: -20.5rem !important;
 }
 
-.crdclr{
-    background-color: #1A1A29 !important; 
+.crdclr {
+    background-color: #1A1A29 !important;
 }
 
 
 
 
-.serviceoffered h5{
-    color: #7562E0 ;
+.serviceoffered h5 {
+    color: #7562E0;
     font-weight: 600;
     font-size: 32px;
     line-height: 100%;
-    font-family: poppins;   
+    font-family: poppins;
     text-align: left;
     align-items: left;
     justify-items: left;
@@ -260,7 +299,7 @@ p.solid {
     margin-top: 75px;
 }
 
-.servicecard{
+.servicecard {
     display: flex;
     gap: 30px;
     align-items: center;
@@ -269,14 +308,15 @@ p.solid {
     justify-items: center;
 }
 
-.seroffcard{
-    background-color: #1A1A29
+.seroffcard {
+    background-color: #1A1A29;
+    margin-top: 40px;
 }
 
-.seroffcard .card{
+.seroffcard .card {
     background-color: #1A1A29;
     color: white;
-    border-width: 4px;
+    border-width: 5px;
     border-radius: 15px;
 }
 
@@ -284,8 +324,18 @@ p.solid {
     border-color: white !important;
 }
 
-.cd135{
+.cd246:hover{
     border-color: #7562E0 !important;
+    transition: 300ms;
+}
+
+.cd135 {
+    border-color: #7562E0 !important;
+}
+
+.cd135:hover{
+    border-color: white !important;
+    transition: 300ms;
 }
 
 .bdy h5 {
@@ -297,8 +347,8 @@ p.solid {
     font-size: 50px !important;
 }
 
-.projects{
-    margin-top: 80px;
+.projects {
+    margin-top: 180px;
     font-size: 32px;
     font-weight: 600;
     color: #7562E0;
@@ -306,14 +356,14 @@ p.solid {
 
 }
 
-.projects p{
+.projects p {
     margin-top: 50px;
     font-size: 18px !important;
     font-weight: 500 !important;
     color: white !important;
 }
 
-.procards{
+.procards {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -323,115 +373,119 @@ p.solid {
 }
 
 
-.bdycolor{
+.bdycolor {
     background-color: #31313F;
 }
 
-.card-group{
+.card-group {
     display: flex;
     gap: 50px;
     width: 1000px;
 }
 
-.btngrp{
+.btngrp {
     display: flex;
     gap: 10px;
     align-items: center;
     justify-content: center;
     text-align: center;
     justify-items: center;
-    
+
 }
 
-.btn1{
+.btn1 {
     background-color: #7562E0 !important;
     color: white !important;
-    
-   
+
+
 }
 
-.btn2{
+.btn2 {
     background-color: #31313F !important;
     color: white !important;
     border-width: 2px;
 }
 
-.bgclr{
+.bgclr {
     background-color: #31313F !important;
 }
 
-.btn-outline{
+.btn-outline {
     border-color: #7562E0 !important;
     border-width: 2px !important;
 }
 
-.cdt{
-    color:#7562E0 !important;
+.cdt {
+    color: #7562E0 !important;
     text-align: left;
     font-size: 24px;
     font-weight: 600;
     font-family: poppins;
 }
 
-.cdtxt{
+.cdtxt {
     color: white;
     font-size: 18px;
     font-weight: 500;
     font-family: poppins;
 }
 
-.imsz{
+.imsz {
     object-fit: cover;
     height: 225px;
-   width: 100%;
+    width: 100%;
     display: flex;
 }
 
-.connect{
+.connect {
     text-align: center;
     align-items: center;
     justify-items: left;
     justify-content: left;
     margin-top: 60px !important;
-    color:#7562E0 !important;
+    color: #7562E0 !important;
     font-family: poppins;
 }
 
-.connect p{
+.connect p {
     color: white !important;
 }
 
-.icons{
+.cnct{
+    margin-top: 120px;
+}
+
+.icons {
     display: flex;
-    gap: 20px;  
+    gap: 20px;
     font-size: 25px;
     color: #7562E0 !important;
     margin-top: 25px;
 }
 
-.iconss{
+.iconss {
     display: flex;
-    gap: 20px;  
+    gap: 20px;
     font-size: 25px;
     color: #7562E0 !important;
 }
 
 
 
-.bgclr img{
+.bgclr img {
     object-fit: contain;
 }
 
 
-.frm{
+.frm {
     margin-top: 60px !important;
-    
+
 }
 
-.forminput input{
+.forminput input {
     background-color: #32323F;
-    height: 60px!important;
-    width: 80% ;
+    height: 60px !important;
+    width: 80%;
     margin-left: 10%;
     margin-top: 10px;
     border-radius: 5px;
@@ -441,28 +495,28 @@ p.solid {
     padding-left: 10px;
 }
 
-.sub{
+.sub {
     width: 174px !important;
-    height: 50px!important;
+    height: 50px !important;
     margin-top: 20px !important;
     background-color: #7562E0 !important;
 }
 
-.msg{
+.msg {
     height: 100px !important;
 }
 
-.foot{
+.foot {
     margin-top: 50px;
     display: flex;
     align-items: center;
     justify-content: space-around;
     text-align: center;
     justify-items: center;
-    
+
 }
 
-.footicons{
+.footicons {
     color: #7562E0 !important;
     display: flex;
     align-items: center;
@@ -471,4 +525,8 @@ p.solid {
     justify-items: center;
     gap: 30px;
     font-size: x-large;
+}
+
+.ft{
+    margin-top: 200px;
 }

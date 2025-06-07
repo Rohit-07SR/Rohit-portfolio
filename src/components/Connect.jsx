@@ -40,7 +40,7 @@ const Connect = () => {
     };
 
     return (
-        <div className="container" id='connect'>
+        <div className="container cnct" id='connect'>
             <div className="row">
                 <div className="col-md-6 text-white p-3">
                     <div className="connect">

@@ -52,7 +52,7 @@ const services = [
 
 const Servicecard = () => {
   return (
-    <div className="seroffcard">
+    <div className="seroffcard" id='servicesbyme'>
       <div className="container serviceoffered text-left py-4">
         <h5>The services I offer are:</h5>
       </div>

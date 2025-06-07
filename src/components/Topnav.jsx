@@ -8,18 +8,20 @@ import {Link} from 'react-scroll';
 const Topnav = () => {
   const homeRef = useRef(null)
   const aboutmeRef = useRef(null)
+  const servicemeRef = useRef(null)
   const proRef = useRef(null)
   const contactRef = useRef(null)
 
+
   const scrolls = (ref) => {
-    ref.Current?.scrolls({ behavior: "smooth" })
+    ref.current?.scrollIntoView({ behavior: "smooth" })
   }
 
   return (
     <>
-      <nav className="navbar navbar-expand-lg clr fixed-top">
+      <nav className="navbar navbar-expand-lg clr fixed-top shift">
         <div className="container">
-          <a className="navbar-brand name" href="#">Rohit S</a>
+          <a  className="navbar-brand name">Rohit S</a>
           <button
             className="navbar-toggler"
             type="button"
@@ -34,16 +36,19 @@ const Topnav = () => {
           <div className="collapse navbar-collapse topclass" id="navbarNav">
             <ul className="navbar-nav ms-auto">
               <li className="nav-item nav-link" >
-                <Link to="about" spy={true} smooth={true} offset={-150} duration={100} onClick={() => { scrolls(homeRef) }}>Home</Link>
+                <Link to="about" className="scroll-link" spy={true} smooth={true} offset={-150} duration={100} onClick={() => { scrolls(homeRef) }}>Home</Link>
               </li>
               <li className="nav-item nav-link" >
-               <Link to="experience" spy={true} smooth={true} offset={-100} duration={100} onClick={() => { scrolls(aboutmeRef) }}>About Me</Link> 
+               <Link to="experience" className="scroll-link" spy={true} smooth={true} offset={-175} duration={100} onClick={() => { scrolls(aboutmeRef) }}>About Me</Link> 
               </li>
               <li className="nav-item nav-link" >
-                <Link to="myprojects" spy={true} smooth={true} offset={-200} duration={100} onClick={() => { scrolls(proRef) }}>Projects</Link>
+               <Link to="servicesbyme" className="scroll-link" spy={true} smooth={true} offset={-10} duration={100} onClick={() => { scrolls(servicemeRef) }}>Services</Link> 
               </li>
               <li className="nav-item nav-link" >
-                <Link to="connect" spy={true} smooth={true} offset={-150} duration={100} onClick={() => { scrolls(contactRef) }}>Contact</Link>
+                <Link to="myprojects" className="scroll-link" spy={true} smooth={true} offset={-250} duration={100} onClick={() => { scrolls(proRef) }}>Projects</Link>
+              </li>
+              <li className="nav-item nav-link" >
+                <Link to="connect" className="scroll-link" spy={true} smooth={true} offset={-200} duration={100} onClick={() => { scrolls(contactRef) }}>Contact</Link>
               </li>
             </ul>
           </div>
